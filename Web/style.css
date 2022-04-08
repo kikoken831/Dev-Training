@@ -1,0 +1,14 @@
+p {
+  color: red;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: blue;
+}
+h1 {
+  color: beige;
+  background-color: green;
+  font-size: 100px;
+}
+div {
+  background-color: red;
+  font-size: 0.5rem;
+}
