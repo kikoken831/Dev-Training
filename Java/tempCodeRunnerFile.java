@@ -1,3 +1,2 @@
-        this.name = name;
-        this.color = color;
-        this.cost = cost;
+System.out.print(b);
+        
