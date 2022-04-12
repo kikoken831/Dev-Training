@@ -1,0 +1,6 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.nav{align-items: center; background-color: rgb(235, 98, 98); font-size: 32px;}
+.h1_text{background-color: aliceblue;}
+.footer{align-items: center; background-color: rgb(235, 98, 98); font-size: 22px;}
