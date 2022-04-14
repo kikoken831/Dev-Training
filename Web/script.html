@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Script</title>
+  </head>
+  <body></body>
+</html>
+
+<script type="text/javascript">
+  var books = ["test", "test2"];
+  alert("Welcome to BMS!");
+  res = confirm("Do you want to borrow a book?");
+  if (res == true) {
+    while (opt != "exit") {
+      var opt = prompt("What do you want? \n[view]\n[add]\n[exit]");
+
+      if (opt == "add") {
+        var name = prompt("Enter name of book");
+        books.push(name);
+      } else if (opt == "view") {
+      }
+    }
+  } else {
+    alert("Goodbye");
+  }
+  document.write("List of Books are: <br>");
+  for (b in books) {
+    document.write(books[b] + "<br>");
+  }
+</script>

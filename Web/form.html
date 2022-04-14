@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <style type="text/css">
+      input:focus{
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <h2>Register here</h2>
     <form action="success.html">
-      Name <input type="text" name="name" required /> <br />
-      Email <input type="email" name="email" required/> <br />
-      Mobile <input type="text" name="mobile" required/> <br />
-      <input type="submit" value="Click Here">
+      <label for="1">Name</label>
+      <input type="text" name="name" id="1" required="True"><br>
+      <label for="2">Email</label>
+      <input type="email" name="email" id="2"><br>
+      <label for="3">Mobile</label>
+      <input type="text" name="mobile" id="3"><br>
+      <label for="4">Skills</label>
+      <input type="text" name="skills" id="4"><br>
+      <label for="5">YOE</label>
+      <input type="text" name="yoe" id="5"><br>
     </form>
   </body>
 </html>
