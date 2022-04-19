@@ -1,24 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" >
-    <style>
-        div{
-            background-color: purple;
-        }
-    </style>
-    <title>Dom</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui">
 
-  </head>
-  <body>
-    <h1>This is H1 tagged</h1>
-    <div>
-      <p>Text 1</p>
-      <h2>H2 tagged</h2>
-      <p>Text 2</p>
-    </div>
-  </body>
+<ui:composition template="/arch.xhtml">
+	<ui:define name="head">
+		<title>Menu</title>
+	</ui:define>
+
+	<ui:define name="content">
+
+		<div class="body-container flex-column-nowrap"
+			style="height: auto; min-height: 0;">
+
+
+			<div
+				class="content flex-row-wrap justify-content-center parallax-background-section"
+				style="background-image: url(#{request.contextPath}/resources/images/static/jay-wennington-unsplash.jpg);
+					height: auto; margin-bottom: 0;">
+				<div class="item flex-column-nowrap justify-content-center  ">
+					<div class="restaurant-panel text-center">
+						<h1>Entrées</h1>
+						<p>Lorem ipsum</p>
+						<p>Errare humanumquem</p>
+						<p>Dolor sit amet</p>
+						<h1>Plats</h1>
+						<p>Lorem ipsum</p>
+						<p>Errare humanumquem</p>
+						<p>Lorem ipsum</p>
+						<p>Errare humanumquem</p>
+						<p>Dolor sit amet</p>
+						<p>Dolor sit amet</p>
+						<h1>Desserts</h1>
+						<p>Lorem ipsum</p>
+						<p>Errare humanumquem</p>
+						<p>Dolor sit amet</p>
+
+						<b:button look="success" value="Réserver"
+							href="#{request.contextPath}/booking.xhtml" />
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+	</ui:define>
+</ui:composition>
 </html>
