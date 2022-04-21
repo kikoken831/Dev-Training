@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script type="text/javascript">
+class car1{
+    name1 = "Audi"
+    constructor(name1){
+        this.name1 = name1
+    }display()
+    {
+        document.write("This car is " + this.name1);
+    }
+}
+class car2 extends car1{
+    name2 = "BMW"
+    constructor(name2){
+        super("Inherited")
+        this.name2 = name2;
+    }
+    showCar(){
+        document.write("This car is " + this.name2);
+    }
+}
+let obj = new car1("TEST");
+
+obj.display();
+
+let obj1 = new car2("Car 2 Test")
+obj1.display()
+obj1.showCar()
+</script>
